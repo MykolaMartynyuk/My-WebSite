@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="headercontainer">
+            <div>
+            <h1>Recipe</h1>
+            <img src="img/logo.png" alt="recipelogo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a class="active"  href="#">Articles</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <form>
+                <input type="text" placeholder="search..." name="search">
+                <button type="submit">submit</button>
+            </form>
+        </div>
+    </header>
+
+    <main class="contact">
+        <section>
+            <h2>Contact us</h2>
+            <div id="info">
+                <address>
+                    <p><span class="material-icons">place</span>Address: 1000 Bruxelles</p>
+                    <p><span class="material-icons">email</span><a href="mailto:info@recipe.mail">Email: info@recipe.mail</a></p>
+                    <p><span class="material-icons">phone</span><a href="tel:555555555">Tel: 5555555555</a></p>
+                </address>
+                <form>
+                <p><label for="massage">Massage:</label></p>
+                <textarea id="massage" cols="40" rows="5" required=""></textarea>
+                <p id="emailform"><label for="email">Email</label>
+                    <input type="email" id="email" required="" placeholder="e.g. johndoe@sky.net">
+                    <input id="send" type="submit" value="submit">
+                </p>
+                </form>
+            </div>
+            <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80598.89310742951!2d4.305350383211763!3d50.85495409101167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3a4ed73c76867%3A0xc18b3a66787302a7!2z0JHRgNGO0YHRgdC10LvRjA!5e0!3m2!1sru!2sbe!4v1636448148098!5m2!1sru!2sbe" style="border:0;" allowfullscreen="" loading="lazy"></iframe> 
+            </div>
+            <div id="video">
+                <h3>May be interesting</h3>
+                <iframe src="https://www.youtube.com/embed/6stlCkUDG_s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;Copyright free. Made by Mykola Martynyuk</p>
+    </footer>
+</body>
+</html>

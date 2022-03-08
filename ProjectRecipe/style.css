@@ -1,0 +1,635 @@
+/* GENERAL START */
+
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0px auto auto auto;
+    max-width: 960px;
+    border-radius: 10px;
+    font-size: 16px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Kanit', sans-serif;
+}
+.active {
+    background-color: rgb(0, 100, 0);
+    color: rgb(173, 255, 47);
+}
+img {
+    border-radius: 3px;
+}
+
+/* Media general */
+@media (min-width: 962px) {
+    html {
+        background-color: #E4DD97;
+    }
+    body {
+        margin-top: 10px;
+    }
+}
+/* GENERAL END */
+
+/* HEADER START */
+header {
+    border-radius: 10px;
+    background-color: rgb(90, 179, 2);
+}
+
+header .headercontainer {
+    border-radius: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 1%;
+
+}
+header .headercontainer div {
+    display: flex;
+    justify-content: left;
+    order: 1;
+}
+header div ul {
+    padding: 0;
+}
+header img {
+    float: left;
+    max-width: 36px;
+    max-height: 36px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+h1 {
+    text-transform: uppercase;
+    order: 1;
+    
+}
+header form {
+    order: 3;
+}
+header form input {
+    background-color: rgb(173, 255, 47) ;
+    border-radius: 22px;
+    padding: 10px;
+    text-align: center;
+    border-style: unset;
+    font-family: 'Kanit', sans-serif;
+}
+header button {
+    background-color: rgb(0, 100, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 10px;
+    border-style: unset;
+    font-family: 'Kanit', sans-serif;
+}
+li a {
+    background-color: rgb(0, 0, 0);
+    padding: 15px 10px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    
+    
+    
+}
+li a:hover {
+    background-color: rgb(0, 100, 0);
+    color: rgb(173, 255, 47);
+}
+li {
+    list-style: none;
+    display: inline;
+    
+}
+
+/* Media header */
+
+@media (min-width: 500px) {
+    header .headercontainer{
+        display: flex;
+    }
+}
+@media (max-width: 499px) {
+    header div h1 {
+        text-align: center;
+        flex-basis: 50%;
+    }
+    header .headercontainer div {
+        justify-content: center;
+
+    }
+    header form {
+        padding-top: 3%;
+        text-align: center;
+    }
+    header ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+}
+@media (min-width: 739px) {
+    
+    header h1 {
+        order: 1;
+        flex-basis: 50%;
+    }
+    header .headercontainer div {
+        
+        flex-basis: 50%;
+    }
+    
+}
+@media (max-width: 346px) {
+    header form button {
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+    
+}
+
+/* HEADER END */
+
+/* MAIN HOME START */
+.home {
+    margin-left: 5%;
+    margin-right: 5%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.home p{
+    margin-top: 0;
+}
+.home h1{
+    margin-top: 0;
+}
+.home a {
+    background-color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+.home a:hover {
+    background-color: rgb(0, 100, 0);
+    color: rgb(173, 255, 47);
+}
+.home #banner {
+    background-image: url(img/banner.jpg);
+    flex-basis: 100%;
+    margin-top: 5%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 20vh;
+    max-height: 20vh;
+    border-radius: 3px;
+}
+.home #banner h2 {
+    text-align: center;
+    font-size: 25px;
+    background-color: rgba(167, 248, 45, 0.5);
+
+
+}
+
+.home aside {
+    display: flex;
+    flex-direction: column;
+    
+}
+.home .overons {
+    line-height: 20px;
+    margin: auto;
+}
+
+.home aside section {
+    margin-bottom: 20px;    
+
+}
+.home aside div p:first-child {
+    overflow: hidden;
+}
+
+.home h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.home h3 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0;
+}
+.home h3::before{
+    content: ' \25C0';
+ }
+.home h3::after{
+    content: '\25B6';
+ }
+
+/* Media content */
+
+@media (min-width: 900px) {
+    .home {
+        display: flex;
+    }
+    .home .overons {
+        max-width: 55%;
+    }
+    .home aside {
+        max-width: 40%;
+    }
+}
+@media (min-width: 376px) {
+    .home img {
+        float: left;
+        max-width: 35%;
+        margin-right: 1vh;
+    }
+}
+
+@media (max-width: 375px) {
+    .home img {
+        max-width: 100%;
+        
+    }
+}
+
+@media (min-width: 417px) {
+    .home #banner h2 {
+        font-size: 36px;
+        margin-top: 0;
+    }
+}
+@media (min-width: 456px) {
+    .home aside section p:last-child{
+        text-align: right;
+    }
+}
+@media (max-width: 455px) {
+    .home aside section p:last-child{
+        text-align: center;
+    }
+}
+@media (max-width: 413px) {
+    .home aside section p:last-child{
+        margin-top: 10%;
+    }
+}
+@media (min-width: 350px) {
+    .home #banner {
+        background-position: center;
+    }
+}
+
+/*MEDIA HOME END */
+
+/* MAIN PIZZA START*/
+
+.recipe section:first-child {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
+    max-width: 100%;
+    justify-content: space-between;
+    
+}
+
+.recipe section .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.recipe section .info ul li{
+    list-style: none;
+    text-align: center;
+    margin: 1%;
+    font-size: 24px;
+}
+.recipe section .info ul {
+    padding: 0;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.recipe img {
+    max-width: 100%;
+}
+.recipe #pizzaimg {
+    max-height: 35vh;
+    object-fit: cover;
+    
+}
+.recipe h2 {
+    text-align: center;
+    border-bottom: solid rgb(0, 0, 0) 1px;
+    font-size: 30px;
+}
+.recipe h3 {
+    text-align: center;
+    flex-basis: 100%;
+    margin-top: 0;
+    font-size: 26px;
+}
+
+/* Media content */
+@media (max-width: 99999px) {  /* Ik schreef deze code 's nachts, ik was moe en mijn hoofd werkte niet. Nu zie ik dat hier iets niet klopt, maar als ik deze code verwijder, werkt de pagina niet zoals het hoort. */
+    .recipe section .info ul li{
+        
+        max-width: 45%;
+    }
+}
+@media (max-width: 700px) {
+    .recipe section .info ul li{
+        min-width: 40%;
+        max-width: 40%;
+    }
+}
+@media (max-width: 350px) {
+    .recipe section .info ul li{
+        min-width: 40%;
+        max-width: 80%;
+    }
+}
+
+/* MAIN PIZZA END*/
+
+/* MAIN ARTICLES START */
+.articles section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.articles .main div #text {
+    overflow: hidden;
+}
+
+.articles section a {
+    background-color: rgb(0, 0, 0);
+    padding: 10px 10px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+.articles section a:hover {
+    background-color: rgb(0, 100, 0);
+    color: rgb(173, 255, 47);
+
+}
+
+.articles #loadmore {
+    display: flex;
+    justify-content: center;
+}
+.articles #loadmore a {
+    padding: 10px 30px;
+    text-align: center;
+    margin-top: 2%;
+    background-color: rgb(0, 0, 0);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.articles h2 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0;
+}
+.articles h3 {
+    text-align: center;
+    border-bottom: solid 1px rgb(0, 0, 0);
+    margin-top: 1vh;
+}
+.articles h3::before{
+    content: ' \25C0';
+ }
+.articles h3::after{
+    content: '\25B6';
+ }
+.articles #loadmore a:hover {
+    background-color: rgb(0, 100, 0);
+    color: rgb(173, 255, 47);
+}
+
+/* Media content */
+
+@media (min-width: 764px) {
+    .articles section div p:last-child{
+        text-align: right;
+    }
+}
+@media (max-width: 763px) {
+    .articles section div p:last-child{
+        text-align: center;
+    }
+}
+@media (min-width: 650px) {
+    .articles section img {
+        float: left;
+        max-width: 25%;
+        margin-right: 1vh;
+        max-height: 20%;
+    }
+}
+@media (max-width: 649px) {
+    .articles section img {
+        max-width: 100%;
+    }
+}
+ /* MAIN ARTICLES END */
+
+/* MAIN CONTACT START */
+.contact section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: space-between;
+    align-content: space-between;
+    
+}
+.contact span{
+    position: relative;
+    bottom: 0;
+}
+
+.contactin section #map {
+    margin: 0 auto 0 auto;
+}
+.contact section #map {
+    border: solid rgb(0, 0, 0) 1px;
+    max-width: 100%;
+}
+.contact section #map iframe {
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    
+
+}
+.contact section #info {
+    max-width: 100%;
+    
+}
+
+.contact section #info address {
+    background-color: rgb(173, 255, 47);
+    border-radius: 25px;
+    font-style: normal;
+    padding: 5px;
+    text-align: center;
+    border: solid 1px rgb(0, 0, 0);
+} 
+
+.contact section #info address a {
+    text-decoration: none;
+}
+.contact section #info address p {
+    margin: 1%;
+}
+.contact section #info p {
+    margin-left: 3%;
+} 
+.contact section #info textarea {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    background-color: rgb(173, 255, 47);
+    border-radius: 25px;
+    padding: 10px;
+}
+.contact section #info #email {
+    background-color: rgb(173, 255, 47);
+    border-radius: 5px;
+    font-style: normal;
+    padding: 5px;
+    text-align: center;
+    border: none;
+}
+.contact section #info #send {
+    background-color: rgb(0, 100, 0);
+    border-radius: 5px;
+    font-style: normal;
+    padding: 5px;
+    text-align: center;
+    border: none;
+    color: rgb(255, 255, 255);
+}
+.contact #info #email input:last-child {
+    background-color: rgb(173, 255, 47);
+    padding: 5px;
+    border-radius: 5px;
+}
+.contact h2 {
+    text-align: center;
+    flex-basis: 100%;
+    
+}
+.contact h3 {
+    text-align: center;
+}
+.contact #video {
+    margin-top: 2vh;
+    min-width: 100%;
+    min-height: 100%;
+}
+.contact #video iframe{
+    min-width: 200px;
+
+    min-height: 200px;
+
+    max-width: 100%;
+}
+
+/* Media content */
+
+@media (max-width: 781px) {
+    .contact section #map {
+        margin-top: 5%;
+        margin: auto auto auto auto;
+    }
+    .contact section #info {
+        margin: auto auto auto auto;
+    }
+    
+}
+
+@media (max-width: 358px) {
+    
+    .contact section #info #email {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contact #info #email input:last-child {
+        margin-top: 1vh;
+    }
+}
+@media (max-width: 348px) {
+    .contact section #info #email input:last-child {
+        margin-top: 3%;
+    }
+}
+
+@media (min-height: 800px) {
+    .contact section {
+        margin-top: 5vh;
+    }
+}
+
+@media (min-width: 250px) {
+    .contact #video iframe{
+        min-width: 100%;
+    
+        min-height: 40vh;
+    
+        max-width: 100%;
+    }
+}
+
+/* MAIN CONTACT END */
+
+/* FOOTER START */
+footer  {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: linear-gradient(
+     to bottom,
+     rgb(255, 255, 255) 1%,
+     rgb(90, 179, 2) 60%
+     )
+}
+    
+footer p{
+margin-top: 1%;
+}
+/* FOOTER END */
+
+
+
+
+
+
